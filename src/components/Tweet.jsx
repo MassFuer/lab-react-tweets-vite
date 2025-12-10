@@ -3,6 +3,7 @@ import Timestamp from "./Timestamp";
 import User from "./User";
 import Message from "./Message";
 import Actions from "./Actions";
+
 function Tweet({ tweet }) {
   const { user, timestamp, message } = tweet;
   return (
@@ -17,7 +18,6 @@ function Tweet({ tweet }) {
         </div>
         <Message message={message} />
         <Actions />
-        
       </div>
 
       <i className="fas fa-ellipsis-h"></i>
